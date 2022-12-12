@@ -1,0 +1,55 @@
+Login Form 
+---------------------
+=> Username [text]
+=> Password [text]
+=> Submit [button]
+
+Registration Form 
+-------------------------------
+=> First Name [text]
+=> Last Name [text]
+=> Gender [radio => [male, female, other]]
+=> Date of Birth [text]
+=> Username/Email [text]
+=> Password [text]
+=> Confirm Password [text]
+=> submit [button]
+
+Reset Password Form 
+----------------------
+=> Username/Email [text]
+=> submit [button] 
+
+Update Password Form
+---------------------------
+=> Current Password [text] 
+=> New Password [text]
+=> Confirm New Password [text]
+=> submit [button] 
+
+Profile Update Form
+-------------------------
+=> First Name [text]
+=> Last Name [text]
+=> Date of Birth [text]
+=> Gender [radio => [male, female, other]]
+=> Email [text]
+=> Profile Image [file => [image]]
+=> submit [button]
+
+channel create form
+----------------------------
+=> channel name [text]
+=> channel description [textarea] 
+=> channel visibility [select => [public,private]] 
+=> channel art [file => [image]]
+=> submit [button]
+
+video upload form
+---------------------------
+=> video title [text]
+=> video description [textarea]
+=> video category [select]
+=> video attachment [file => [video]]
+=> video visibility [select => [public, private]]
+=> submit [button]

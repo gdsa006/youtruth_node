@@ -1,0 +1,9 @@
+Csrf protection, 
+Jwt token based authentication
+Captcha
+Cors protection 
+Request header restrictions
+Request body size restrictions
+Form inputs sanitization
+Secure, httponly & signed cookies
+OTP

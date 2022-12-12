@@ -1,0 +1,50 @@
+ADMIN 
+------------
+View/Block User account 
+View/Bock Channel 
+View/Block Video 
+
+Upload Video => behalf of other user 
+Create User => behalf of other user 
+Create Channel => behalf of other user
+
+
+USER 
+-----------
+Subscribed Video 
+Watch Later Video 
+
+Profile 
+Profile Update 
+Update Password 
+
+Your Channels
+Create Channel 
+Update Channel
+Upload Video 
+
+Like 
+Subscribe
+
+
+PUBLIC 
+--------------
+Watch Video 
+Login
+Forget Password 
+Register 
+Home
+Top Video
+Trending Video 
+Latest Video 
+Article Video 
+Search Video
+
+Video Player Feature
+--------------------
+play 
+pause 
+mute
+volume
+seeking
+full screen

@@ -1,0 +1,48 @@
+TIMELINE
+-------------------------------------------
+
+1 Week [16-03-2021 to 23-03-2021]
+-------------
+- HTML pages design
+- backend architecture design
+- login
+- logout
+- user registration
+- view profile
+- reset password using email OTP
+- database architecture design
+
+2nd week [24-03-2021 to 31-03-2021]
+----------------
+- edit profile
+- update profile
+- update password
+- home page (top, trending, article, and latest)
+- video player & streaming
+-  play
+-  pause
+-  volume
+-  full screen
+-  loop 
+-  seeking
+-  video recommendation
+- create channel
+- customize/update channel
+
+3rd week [01-04-2021 to 07-04-2021]
+---------------------------------------
+- upload video[using chunks]
+- delete video
+- update video details
+- Subscribe & unsubscribe 
+- like
+- view
+
+4th week [08-04-2021 to 14-04-2021]
+---------------------------------------
+Admin Panel
+1. Block user
+2. Block channel
+3. Delete video 
+4. new user approval
+

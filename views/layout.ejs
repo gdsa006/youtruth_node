@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>TI Videos</title>
+  
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/defaultstyle.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/defaultstyle-responsive.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery.toast.min.css">
+  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://vjs.zencdn.net/7.11.4/video-js.css"/>
+  <!-- City -->
+<!-- <link
+href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+rel="stylesheet"
+/> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.css">
+
+</head>
+<body>
+
+    <%-body%>
+    
+    <div id="bs-modal-wrapper"></div>
+
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/jquery-ui.min.js"></script>
+<script src="/static/js/md5.min.js"></script>
+<script src="/static/js/jquery.validate.min.js"></script>
+<script src="/static/js/jquery.toast.min.js"></script>
+<script src="/static/js/video.min.js"></script>
+<script src="/static/js/videojs-seek-buttons.min.js"></script>
+
+<script src="https://www.rgbdesigner.com/stream-app/js/form-rules.js"></script>
+<script src="https://www.rgbdesigner.com/stream-app/js/data-table.js"></script>
+<script src="https://www.rgbdesigner.com/stream-app/js/data-table-thumbnails.js"></script>
+<script src="https://www.rgbdesigner.com/stream-app/js/mvc.js"></script>
+<script src="https://www.rgbdesigner.com/stream-app/js/routes.js"></script>
+    
+<script>
+$(document).ready(function() {
+
+  $("nav.toggle-sidebar").toggleClass("menu_show");
+
+  $("body").on('click', '.top', function() {
+  $("nav.menu").toggleClass("menu_show");
+  $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  }
+  );
+
+  $(".item_menu").on('click', function(){
+    $("nav.menu").toggleClass("menu_show");
+    $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  })
+
+
+  $("#overlay").on('click', function() {
+    $("nav.menu").toggleClass("menu_show");
+    $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  })
+
+ 
+
+})
+</script>
+</body>
+
+</html>
+
+</html>

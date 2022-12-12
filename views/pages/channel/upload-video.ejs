@@ -1,0 +1,57 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="sectionheading">
+                <h2>Upload New Video</h2>
+                <a href="/user/view/channels" class="btn btn-sm btn-outline-danger"> <i class="fas fa-arrow-circle-left"></i> My Channels </a>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <form novalidate id="upload-video-form">
+                                <div class="form-group">
+                                    <label for="channelId"> Channel Name</label>
+                                    <select name="channelId" id="channelId" class="custom-select">
+                                        <option value="" selected></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="videoTitle">Title</label>
+                                    <input type="text" class="form-control" name="videoTitle" id="videoTitle" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="videoDescription">Description </label>
+                                    <textarea class="form-control" rows="3" name="videoDescription"
+                                        id="videoDescription"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="categoryId">Category</label>
+                                    <select name="categoryId" id="categoryId" class="custom-select">
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="visibility" name="visibility">
+                                        <option value="1" selected>Public</option>
+                                        <option value="0">Private</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" id="videoFile" name="videoFile">
+                                </div>
+                                <button type="button" class="btn btn-danger btn-sm" id="upload-video-btn">Upload </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="progress-bar">
+                        <span id="percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

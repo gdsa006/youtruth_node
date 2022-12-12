@@ -1,0 +1,53 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="sectionheading">
+                <h2>Users</h2>
+              </div>
+            <div class="card">
+                <div class="card-body">
+                    <div id="users-data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/data-table.js"></script>
+  <script>
+
+      let props = {
+          id:'users-data',
+          url:'/admin/get/users',
+          pageSize:1,
+          dataField:'users',
+          countField: 'count',
+          cols : {
+            firstName : {
+                alias:'FIRST NAME',
+            },
+            lastName : {
+                alias:'LAST NAME',
+            },
+            email : {
+                alias:'EMAIL',
+            },
+            active : {
+                alias:'STATUS',
+                html : (row) =>{
+                    return row['active'] == 1 ? 'ACTIVE' : 'INACTIVE'
+                }
+            },
+            action :{
+                alias :'ACTION',
+                html : (row) => {
+                if(row.active == 1)
+                    return '<button class="btn btn-danger btn-sm"> deactive </button>'
+                else 
+                    return '<button class="btn btn-success btn-sm"> activate </button>'
+            }
+            }
+          }
+      }
+    new DataTable(props)
+  </script>

@@ -1,0 +1,367 @@
+/* ========================================
+RESPONSIVE CSS
+======================================== */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    #videoplayerpage {
+        padding: 30px 1%;
+    }
+
+    ul.orderIDlisting {
+        height: 546px;
+    }
+
+    .dsbleftpannel .tab-content {
+        min-height: 595px;
+    }
+
+    /* home-page */
+    .thmbsimg {
+        height: 124px;
+    }
+
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1377px) {
+    #videoplayerpage {
+        padding: 30px 2%;
+    }
+
+    ul.orderIDlisting {
+        height: 546px;
+    }
+
+    .dsbleftpannel .tab-content {
+        min-height: 581px;
+    }
+
+}
+
+@media all and (max-width:768px) {
+
+    /* ======================== 
+    HEADER CSS
+    ======================== */
+    #tiv-header {
+        background: #fff;
+        padding: 10px 0px;
+    }
+
+    .userdetails {
+        border-left: none;
+        padding: 0;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .headerdetails {
+        float: none;
+        width: 100%;
+        margin: 5px 0px 0px;
+        text-align: center;
+    }
+
+    .headerdetails p {
+        display: none;
+    }
+
+    .dropdown-menu li.mob-userdetails {
+        display: block !important;
+        padding: 2px 20px 3px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 5px;
+        background: white;
+    }
+
+    .dropdown-menu li.mob-userdetails p {
+        display: block !important;
+        color: #6068ca !important;
+        font-weight: 700;
+        text-align: left !important;
+        line-height: 15px !important;
+        border: none !important;
+        margin-top: 0px !important;
+        float: none;
+        padding: 2px 0px 5px !important;
+    }
+
+    .dropdown-menu li.mob-userdetails p span {
+        color: #000 !important;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .userProfile {
+        float: left;
+        margin: 0;
+        width: 37px;
+        height: 37px;
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+
+    .logo-wrap {
+        text-align: center;
+    }
+
+    .goah-logo {
+        width: 80%;
+    }
+
+    .searchbar .form-group {
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        width: 80%;
+    }
+
+    .btn-search {
+        padding: 8px 12px 4px 10px;
+        width: 20%;
+    }
+
+    /* ======================== 
+    LOGIN & SINGUP STYLE
+    ======================== */
+    #MainWrap {
+        padding: 0px;
+    }
+
+    .donthavacc,
+    .only_register .donthavacc {
+        position: static;
+        width: 100%;
+        bottom: 35px;
+        padding: 20px 0px 20px;
+    }
+
+    .only_register {
+        padding: 0% 10%;
+        height: auto;
+    }
+
+    .only_register img.login_register_logo {
+        width: 55%;
+    }
+
+    /* ========================
+    VIDEO LISTING PAGE STYLE
+    ========================= */
+
+    .thmbsimg {
+    height: 225px;
+    }
+
+    /* ========================
+    VIDEO PLAY PAGE STYLE
+    ========================= */
+    #videoplayerpage {
+        padding: 30px 0%;
+    }
+
+    .videotitle h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        margin: 5px 0;
+        min-height: 52px;
+        line-height: normal;
+    }
+
+    .videotitle .channeldp {
+        background: #f4f4f4;
+        float: left;
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 10px 15px 10px 0px;
+    }
+
+    .vidoption ul {
+        float: left;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .vidoption {
+        float: left;
+    }
+
+    .vidoption ul {
+        float: left;
+        margin: 20px 0;
+        padding: 0;
+        display: block;
+        text-align: left;
+    }
+
+    .vidoption li {
+        list-style: none;
+        float: left;
+        text-align: center;
+    }
+
+    .vidoption a.likes,
+    .vidoption a.subscribe {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    ul.dropdown-menu.show {
+        right: -10px;
+    }
+
+    .video-wraps .vid-thmbs {
+        height: 175px;
+    }
+
+    .video-details-wraps {
+        padding: 15px 0px 0px 0px;
+    }
+
+    /* ======================== 
+    OTHER PAGE STYLES
+    ======================== */
+
+    #otherpage-wrap {
+        padding: 30px 0%;
+        min-height: 80vh;
+    }
+
+    .left-right-pad-offset {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+    .opentabs {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    }
+
+
+    /* ======================== 
+    FOOTER STYLES
+    ======================== */
+    #ti_footer ul li a {
+        display: inline-block;
+        padding: 0px 10px 0px 0px;
+        margin: 0px 7px 0px 0px;
+        color: #666;
+        font-size: 14px;    /* border-right: 1px solid #d6d6d6; */
+        line-height: 20px;
+    }
+
+    #ti_footer ul li a:hover {
+        text-decoration: none;
+        color: #f65151;
+        background: #fff;
+    }
+
+    #ti_footer ul li span {
+        display: none;
+    }
+
+    .language span {
+        display: block !important;
+    }
+
+    .language span {
+        border-right: 1px solid #999;
+        height: 20px;
+        display: block;
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .language-content {
+        z-index: 2;
+        top: -175px;
+        right: -10px;
+    }
+
+    /* ======================== 
+    LOGIN PAGE STYLE 
+    ======================== */
+
+    /* LOGIN */
+    .login_register_wrap {
+        font-size: 14px;
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: auto;
+        margin: 10px 10px 0px;
+    }
+
+    .login_left {
+        padding: 30px;
+        background: #f8f6fe url(../images/login_bg.png) no-repeat 0% 35%;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        background-size: 80%;
+        margin-bottom: 20px;
+    }
+
+    .login_register {
+        padding: 15px 20px 0px;
+        min-height: 300px;
+        height: auto;
+    }
+
+    /* .socialacct, .backtologin {
+        width: 88%;
+        bottom: 27px;
+    } */
+    .socialacct,
+    .backtologin {
+        text-align: left;
+        border-top: 1px solid #e8e8e8;
+        margin-top: 30px;
+        padding: 30px 20px 25px;
+        position: unset;
+        width: 100%;
+        bottom: unset;
+    }
+
+    /* REGISTER */
+    .register_left {
+        padding: 30px;
+        background: #f8f6fe url(../images/sign_up_bg.png) no-repeat 0% 38%;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        background-size: 80%;
+        margin-bottom: 20px;
+    }
+
+    .login_register_form {
+        padding: 20px 0px;
+    }
+
+    /* .login_register_form input#exampleInputAmount {
+        width: 200px;
+    } */
+
+    /* PASSWORD RESET */
+    .password_reset_left {
+        padding: 30px;
+        background: #f8f6fe url(../images/password_reset_bg.png) no-repeat 0% 36%;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        background-size: 80%;
+        margin-bottom: 20px;
+    }
+
+    .pass_rest_form {
+        margin-top: 0px;
+    }
+
+}
+
+/* End 768px */

@@ -1,0 +1,36 @@
+User/Public Pages
+‐---------------
+-> Login
+-> Register
+-> Reset password 
+-> Home
+-> Top video 
+-> Trending video
+-> Latest video
+-> Article video
+-> Subscribed video
+-> Watch later video
+-> Profile
+-> Profile edit 
+-> Update password
+-> View channel
+-> Your channel
+-> Create channel
+-> Edit channel
+-> Watch video
+-> Upload video
+
+Admin Pages
+---------
+-> View/block Users
+-> View/block Channels
+-> View/block Videos
+
+-> Create Channel
+-> Upload Video
+
+
+After cost estimation-----------------------
+Extra pages:
+-> Contact 
+-> About

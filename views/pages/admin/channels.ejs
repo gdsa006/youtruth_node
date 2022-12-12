@@ -1,0 +1,55 @@
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="sectionheading">
+                <h2>Channels</h2>
+              </div>
+            <div class="card">
+                <div class="card-body">
+                    <div id="users-data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/data-table.js"></script>
+  <script>
+
+      let props = {
+          id:'users-data',
+          url:'/admin/get/channels',
+          pageSize:1,
+          dataField:'channels',
+          countField: 'count',
+          cols : {
+            name : {
+                alias:'CHANNEL NAME',
+            },
+            description : {
+                alias:'DESCRIPTION',
+            },
+            visibility : {
+                alias:'VISIBILITY',
+            },
+            active : {
+                alias:'STATUS',
+                html : (row) =>{
+                    return row['active'] == 1 ? 'ACTIVE' : 'INACTIVE'
+                }
+            },
+            action :{
+                alias :'ACTION',
+                html : (row) => {
+                if(row.active == 1)
+                    return '<button> deactive </button>'
+                else 
+                    return '<button> activate </button>'
+            }
+            }
+          }
+      }
+    new DataTable(props)
+  </script>

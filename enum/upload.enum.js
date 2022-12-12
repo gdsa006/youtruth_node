@@ -1,0 +1,6 @@
+module.exports = {
+    CHANNEL_POSTER : 'CHANNEL_POSTER',
+    PROFILE_IMAGE : 'PROFILE_IMAGE',
+    VIDEO_POSTER   : 'VIDEO_POSTER',
+    VIDEO : 'VIDEO'
+}

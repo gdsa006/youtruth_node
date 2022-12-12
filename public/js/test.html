@@ -1,0 +1,86 @@
+<div id="videoplayerpage">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="videoplayer-wrap">
+                    <div class="vidplayer">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <div class="stream-player" id="stream-player"
+                                style="background-color:#000000e0;position: relative;height:400px;">
+                                <video controls autoplay
+                                    style="position: absolute;top: 0;right: 0;bottom: 0;left: 0;height: 400px;width: 100%;margin:auto">
+                                    <source src="/api/stream/video?hash=${this.query.hash}&format=default"
+                                        type="video/mp4">
+                                    <source src="/api/stream/video?hash=${this.query.hash}&format=default"
+                                        type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ti-innerdetails">
+                        <div class="videotitle">
+                            <div class="channeldp"><img
+                                    src="https://i.pinimg.com/236x/db/ea/af/dbeaaf2ad67ffc92cc2fbaa501527220.jpg"
+                                    alt=""></div>
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu pretium enim. Sed
+                                quis ultrices libero.</h1>
+                        </div>
+
+                        <div class="videoOptions">
+                            <div class="views-upload"> <span class="totalviews">0 Views</span> <span class="seprater"><i
+                                        class="fas fa-circle"></i></span> <span class="uploaddate">3
+                                    months ago</span>
+                            </div>
+                            <div class="vidoption">
+                                <ul>
+                                    <li><a href="" class="likes"><i class="fas fa-thumbs-up"></i> 500 Like</a>
+                                    </li>
+                                    <li><a href="" class="subscribe">Subscribe</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="video-details">
+                            <h4><i class="fas fa-tag"></i> In Explosive Topics</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu pretium enim. Sed
+                                quis ultrices libero. Aliquam erat volutpat. Phasellus in vehicula erat. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Duis mollis
+                                malesuada iaculis. Morbi a convallis purus, a vestibulum orci. Aenean ac tellus at
+                                purus molestie feugiat euismod nec sem. Nunc fringilla, ex at rhoncus sollicitudin,
+                                justo erat maximus erat, eget ultrices dui nibh vitae justo. Integer vitae felis sed
+                                nunc dignissim ornare. Nullam dictum volutpat nunc, ac dictum neque. Suspendisse
+                                quis sem velit. Sed eleifend blandit est porttitor aliquam. In turpis magna, maximus
+                                in diam et, faucibus maximus ante.</p>
+                            <p>Nullam suscipit sapien nulla, ac tincidunt mauris mattis semper. Suspendisse
+                                vestibulum tortor ac urna placerat ultrices. Nulla tincidunt nisl a quam tempor,
+                                quis posuere urna imperdiet. Fusce suscipit, massa et tempus mattis, turpis orci
+                                viverra risus, in molestie dui tellus ut nisl. Maecenas congue, nibh vitae
+                                sollicitudin bibendum, leo nisl feugiat sem, eu posuere urna nisi at nunc.</p>
+                        </div>
+                        <!-- <div class="videoOptions">
+                      </div> -->
+                    </div>
+
+                </div>
+                <!-- videoplayer-wrap ends -->
+            </div>
+            <div class="col-lg-3">
+                <div class="videosugg-thumbs">
+                    <div class="suggestionvid">
+                        <p>Up Next</p>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Play
+                            </label>
+                        </div>
+                    </div>
+                    <div id="stream-video-suggestions">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

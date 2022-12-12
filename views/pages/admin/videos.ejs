@@ -1,0 +1,99 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="sectionheading">
+                <h2>Videos</h2>
+              </div>
+            <div class="card">
+                <div class="card-body">
+                    <div id="users-data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/data-table.js"></script>
+  <script>
+
+      let props = {
+          id:'users-data',
+          url:'/admin/get/videos',
+          pageSize:1,
+          dataField:'videos',
+          countField: 'count',
+          cols : {
+            name : {
+                alias:'FIRST NAME',
+            },
+            likes : {
+                alias:'LIKES',
+            },
+            views : {
+                alias:'VIEWS',
+            },
+            description : {
+                alias:'DESCRIPTION',
+            },
+            active : {
+                alias:'STATUS',
+                html : (row) =>{
+                    return row['active'] == 1 ? 'ACTIVE' : 'INACTIVE'
+                }
+            },
+            action :{
+                alias :'ACTION',
+                html : (row) => {
+                if(row.active == 1)
+                    return '<button> deactive </button>'
+                else 
+                    return '<button> activate </button>'
+            }
+            }
+          }
+      }
+    new DataTable(props)
+  </script>
+  <script>
+
+      let obj = {
+          id:'users-data',
+          url:'/admin/get/videos',
+          pageSize:5,
+          data:'videos',
+          records: 'count',
+          cols : {
+            name : {
+                alias:'FIRST NAME',
+            },
+            likes : {
+                alias:'LIKES',
+            },
+            views : {
+                alias:'VIEWS',
+            },
+            description : {
+                alias:'DESCRIPTION',
+            },
+            active : {
+                alias:'STATUS',
+                logic : (row) =>{
+                    return row['active'] == 1 ? 'ACTIVE' : 'INACTIVE'
+                },
+                click : (row) => {
+                    console.log(row)
+                }
+            },
+            action :{
+                alias :'ACTION',
+                logic : (row) => {
+                if(row.active == 1)
+                    return '<button> deactive </button>'
+                else 
+                    return '<button> activate </button>'
+            }
+            }
+          }
+      }
+    drawDataTable(obj);
+  </script>

@@ -1,0 +1,26 @@
+BACKEND
+----------------------
+Node JS
+Express
+Express Validator
+Bcypt
+JWT
+Csurf
+Cors
+Body Parser 
+Cookie Parser 
+MySQL
+Sequelize ORM
+
+UI
+--------------------
+Bootstrap
+Font Awesome
+EJS
+Jquery Ui
+Jquery Validator 
+Jquery DatePicker
+Video JS
+HTML
+CSS
+PSD
