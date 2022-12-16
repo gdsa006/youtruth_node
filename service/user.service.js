@@ -18,26 +18,45 @@ const { OtpTypeEnum, UserStatusEnum, UploadEnum, UserRoleEnum } = require('../en
 let service = {
     register : async (req, res) => {
         let validation = [], status = 'error', message = 'Registration process failed';
+
         try {
             let {fname,lname,dob,gender,email,password,std,mobile} = req.body;
 
             let isUserExist = await User.findOne({where:{email},attributes:['id']});
+            console.log('->>>>>');
+            console.log(isUserExist);
+            console.log('<<<<<-');
             if(!isUserExist){
                 let salt = await genSalt(10);
                 let _password = await hash(password, salt);
                 let mobileWithStd = std + '-'+ mobile;
+
+                console.log('line 33');
+
                 let user = await User.create({firstName:fname,lastName:lname,dob,gender,email,password:_password, mobile: mobile, std: std});
+
+                console.log('line 38');
+
                 if(user){
-                    let role = await Role.findOne({where:{name:UserRoleEnum.USER, active:1}});
+                    console.log('line 35');
+
+                    let role = await Role.findOne({where:{name:UserRoleEnum.USER}});
+                    console.log('line 38', role);
+
                     await UserRoleMapping.create({userId:user.id,roleId:role.id})
+
+                    console.log('line 42');
+
                     service.resendSignUpOtp({email});
                     status = 'success';
                     message = `Email verification otp sent to your email '${email}'`;
+                    console.log('!!!!!!!!!!!!!!!!!!!!!!!!');
                 }
             } else {
                 validation.push('Email is already exist.')
             }
         } catch(error){
+            console.log('mmmmmmmmmmmmmm', error);
             logger.error(error)
         }
         res.jsonp({
@@ -500,17 +519,27 @@ let service = {
         }
     },
     resendSignUpOtp : async({email}) => {
+        console.log('resendSignOTP');
+
         let status = 'error', validation = [], message = undefined, data = {};
         try {
+            console.log('email>>>>', email);
 
             let user = await User.findOne({
                 where: {email, active: 0, status: UserStatusEnum.PENDING}, 
                 attributes:['email','firstName','lastName']
             });
 
+            console.log('User>>>>', user);
+
             if(user){
                 let otp = randomHelper.rand6Num();
+                console.log('OTP>>>>', otp);
+
                 await UserOtp.create({email, otp, type: OtpTypeEnum.SIGNUP});
+
+                console.log('user OTP created');
+
                 mailService.sendSignUpOtpMail({
                     email: user.email,
                     username: user.firstName + ' ' + user.lastName,
@@ -522,6 +551,7 @@ let service = {
                 validation.push('User not found');
                 return {status, data, message, validation}
         } catch(err){
+            console.log('abcd', err);
             logger.error(err)
             validation.push('Something went wrong')
             return {status, validation}

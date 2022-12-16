@@ -12,10 +12,10 @@ const Role = sequelize.define('Role',
             type: DataTypes.STRING(10),
             allowNull: false
         },
-        active:{
-            type: DataTypes.TINYINT(1),
-            defaultValue:1
-        },
+        // active:{
+        //     type: DataTypes.TINYINT(1),
+        //     defaultValue:1
+        // },
         createdAt : {
             type : DataTypes.DATE,
             defaultValue : NOW
