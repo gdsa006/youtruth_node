@@ -30,6 +30,7 @@ let sendHtmlMail= async({to, subject, templateName, data}) => {
             await mailAudit.update({messageId: mail.messageId, status: mailStatus.SUCCESS});
     }catch(err) {
         // insert mail status into DB
+        console.log('Email Error^^^^^^^^^^>>>>',err);
         logger.info(`Mail failed to ${to} with subject ${subject}`);
         if(mailAudit)
             await mailAudit.update({status: mailStatus.FAILED});
