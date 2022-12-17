@@ -10,7 +10,8 @@ let mailerOption = {
         pass: process.env.EMAIL_PASSWORD
     },
     tls:{
-        ciphers:'SSLv3'
+        ciphers:'SSLv3',
+        rejectUnauthorized: false
     }
 };
 
