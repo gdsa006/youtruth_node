@@ -9,6 +9,9 @@ let mailerOption = {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD
     },
+    tls:{
+        ciphers:'SSLv3'
+    }
 };
 
 module.exports = {
